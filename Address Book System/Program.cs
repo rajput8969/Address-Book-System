@@ -6,7 +6,18 @@ namespace Address_Book_System
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(" AddressBook\n");
+            int number = int.Parse(Console.ReadLine());
+
+            switch (number)
+            {
+                case 1:
+                    AddressBookImplementation.DriverMethod();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Entry");
+                    break;
+            }
         }
     }
 }
